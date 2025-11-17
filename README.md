@@ -12,7 +12,7 @@
 |   - 공부 시간 / SNS 시간 / 유튜브 시간 그래프 |
 |   - 지난 7일 패턴 시각화                     |
 |                                             |
-|   (진호씨: charts.py에서 구현)               |
+|   (나지마: charts.py에서 구현)               |
 ---------------------------------------------
 
 [데이터 불러오기] [AI 예측하기] [PDF로 저장]
@@ -37,12 +37,12 @@ AI 분석 결과:
 ---------------------------------------------
 🧩 파일 구조와 역할
 src/
- ├─ gui/                ← 진호 씨 담당
+ ├─ gui/                ← 나지마 담당
  │     ├─ main_window.py   (메인 UI)
  │     ├─ charts.py         (그래프)
  │     └─ components.py     (버튼, 카드 등 - 선택)
  │
- ├─ ai/                 ← 나지마 담당
+ ├─ ai/                 ← 진호 씨 담당
  │     ├─ predictor.py
  │     ├─ model_manager.py
  │     └─ preprocessing.py
@@ -51,6 +51,6 @@ src/
 🤝 두 기능이 연결되는 방식
 진호씨(main_window.py) → 버튼 클릭
        ↓
-   app.py → 나지마(AI) predictor.predict()
+   app.py → 진호 씨(AI) predictor.predict()
        ↓
 최종 예측 결과 UI에 출력
